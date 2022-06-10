@@ -7,7 +7,10 @@
   
   <img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
   
-  ![Cura Icon](./assets/cura.png)
+  <div width="40px" display="flex">
+    ![Cura Icon](./assets/cura.png)
+  </div>
+  
 </div>
             
           
