@@ -3,7 +3,9 @@
 ## Olá, eu sou o boy da impressora 3D no Laboratório de Robótica e Automação(LAR)
 
 <div>
-  <img width="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+  <img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+  
+  <img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
 </div>
             
           
