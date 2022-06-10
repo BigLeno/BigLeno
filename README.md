@@ -7,7 +7,7 @@
   
   <img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
   <img width="40px" src="./assets/cura.png" />
-  <img src="https://www.pngitem.com/pimgs/m/437-4375158_autodesk-fusion-360-logo-nt-fusion-360-logo.png" alt="fusion360" width="auto" height="48"/>
+  <img src="https://www.pngitem.com/pimgs/m/437-4375158_autodesk-fusion-360-logo-nt-fusion-360-logo.png" alt="fusion360" width="40px"/>
   
 </div>
             
