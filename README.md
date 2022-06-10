@@ -6,6 +6,8 @@
   <img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
   
   <img width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
+  
+  ![Cura Icon](./assets/cura.png)
 </div>
             
           
