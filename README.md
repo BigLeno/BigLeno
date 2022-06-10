@@ -2,7 +2,12 @@
 
 ## Olá, eu sou o boy da impressora 3D no Laboratório de Robótica e Automação(LAR)
 
-<--
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+</div>
+            
+          
+
 **BigLeno/BigLeno** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -15,4 +20,3 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
