@@ -1,5 +1,3 @@
-### Hi there 👋
-
 ## Olá, eu sou o boy da impressora 3D no Laboratório de Robótica e Automação(LAR)
 
 <div>
