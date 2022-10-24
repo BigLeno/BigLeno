@@ -1,3 +1,9 @@
+
+<p align="left">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+</p>
+
+
 <h1 align="left">
     <a href="https://pt-br.reactjs.org/">BigLeno</a>
 
