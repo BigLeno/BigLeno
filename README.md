@@ -5,7 +5,7 @@
 
 
 <h1 align="left">
-    <a href="https://pt-br.reactjs.org/">BigLeno</a>
+    <a href="https://github.com/BigLeno/BigLeno">BigLeno</a>
 
 </h1>
 <p align="left"> Olá, eu sou o boy da impressora 3D no Laboratório de Robótica e Automação(LAR) </p>
@@ -14,7 +14,7 @@
 ![](https://img.shields.io/badge/UFRN-C&T-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) 
 
 <h1 align="left">
-    <a href="https://pt-br.reactjs.org/">Minhas redes sociais</a>
+    <a href="https://github.com/BigLeno/BigLeno">Minhas redes sociais</a>
 
 </h1>
 <p align="left">  </p>
