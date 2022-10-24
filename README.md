@@ -14,7 +14,7 @@
 <p align="left">  </p>
 
 - [Instagram](https://www.instagram.com/rutileno_gabriel/)
-- [Discord](BigLeno#5106)
+- [Discord (BigLeno#5106)]()
 
 
 <h2> 🚀 &nbsp;Ferramentas e Linguagens que utilizo</h2>
