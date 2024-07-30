@@ -11,7 +11,7 @@
 <p align="left"> Olá, eu sou o boy da impressora 3D no Laboratório de Robótica e Automação(LAR)</p>
  
 
-![](https://img.shields.io/badge/UFRN/C&T--informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)  ![](https://img.shields.io/badge/Python--informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/Impressão_3D--informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) 
+![](https://img.shields.io/badge/UFRN/C&T--informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)  ![](https://img.shields.io/badge/Python--informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/Impressão_3D--informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/Desenvolvimento_de_Software--informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/IOT--informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) 
 
 <h1 align="left">
     <a href="https://github.com/BigLeno">Minhas redes sociais</a>
