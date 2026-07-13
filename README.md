@@ -20,6 +20,7 @@ Antes disso, trabalhei com **hardware, IoT e prototipagem** na UFRN (URA, inPACT
 - **Orquestração** — Apache Airflow + Docker para DAGs de produção [2]
 - **Automação** — Python para integração entre sistemas legados e modernos [2]
 - **Integração de IA** — conexão de modelos ao ambiente produtivo [2]
+- **Análise & visualização de dados** — SQL analítico, dashboards e modelos preditivos
 
 ---
 
@@ -45,6 +46,16 @@ Dashboard financeiro interativo em Python para análise de carteiras de ativos d
 - Heatmap de correlação entre ativos e heatmap de retornos mensais [3]
 - Thread em background para atualização periódica de preços [3]
 
+### 🎓 Educação & Analytics — [data-analytics-portfolio](https://github.com/BigLeno/data-analytics-portfolio)
+
+Pipeline de análise de dados educacionais (cursinho pré-vestibular) — do dado bruto "sujo" à base analítica estruturada, com dashboard, SQL, validação e modelo preditivo.
+
+- Pipeline em camadas (ETL): extração fiel → tratamento documentado → base em Parquet
+- Camada analítica em **SQL (DuckDB)** e validação de schema com **Pandera**
+- **Dashboard interativo** (Streamlit + Plotly, 6 abas) e **score de propensão** (scikit-learn)
+- Ambiente reproduzível com **Docker** — roda o pipeline e sobe o painel sozinho
+- Rigor: auditoria e documentação da limitação amostral dos dados
+
 ---
 
 ## 🧰 Stack
@@ -66,6 +77,13 @@ Dashboard financeiro interativo em Python para análise de carteiras de ativos d
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
+
+### Data & Analytics
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 
 ### Hardware & IoT (histórico)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)
