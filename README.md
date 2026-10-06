@@ -4,11 +4,11 @@
 
 # Olá! Eu sou o [BigLeno](https://github.com/BigLeno) 👋
 
-Sou **Python Developer / Data Engineer** na **[Confianca-FIDC](https://github.com/Confianca-FIDC)** — foco em pipelines de dados, ETL e integração de sistemas [2].
+Sou **Python Developer / Data Engineer** na **[Confianca-FIDC](https://github.com/Confianca-FIDC)** — foco em pipelines de dados, ETL e integração de sistemas.
 
-Tenho familiaridade com ambientes **Linux** para deploy, automação e administração de serviços em produção (Docker, bancos SQL, brokers de mensageria, web servers) [2].
+Tenho familiaridade com ambientes **Linux** para deploy, automação e administração de serviços em produção (Docker, bancos SQL, brokers de mensageria, web servers).
 
-Antes disso, trabalhei com **hardware, IoT e prototipagem** na UFRN (URA, inPACTA, GPH), o que me deu uma visão completa do ciclo de desenvolvimento, do silício até o deploy em produção [2].
+Antes disso, trabalhei com **hardware, IoT e prototipagem** na UFRN (URA, inPACTA, GPH), o que me deu uma visão completa do ciclo de desenvolvimento, do silício até o deploy em produção.
 
 📍 Natal, RN — Brasil
 
@@ -16,17 +16,27 @@ Antes disso, trabalhei com **hardware, IoT e prototipagem** na UFRN (URA, inPACT
 
 ## 🚀 O que eu faço agora
 
-- **Data engineering** — pipelines ETL, CDC em tempo real, integração SQL Server ↔ PostgreSQL [2]
-- **Orquestração** — Apache Airflow + Docker para DAGs de produção [2]
-- **Automação** — Python para integração entre sistemas legados e modernos [2]
-- **Integração de IA** — conexão de modelos ao ambiente produtivo [2]
+- **Data engineering** — pipelines ETL, CDC em tempo real, integração SQL Server ↔ PostgreSQL
+- **Orquestração** — Apache Airflow + Docker para DAGs de produção
+- **Automação** — Python para integração entre sistemas legados e modernos
 - **Análise & visualização de dados** — SQL analítico, dashboards e modelos preditivos
 
 ---
 
 ## 🏷️ Featured Projects
 
-### 🔧 Atual — [cdc-sqlserver-postgres-kafka](https://github.com/BigLeno/cdc-sqlserver-postgres-kafka)
+### 🏦 Destaque — [bcb-indicadores-pipeline](https://github.com/BigLeno/bcb-indicadores-pipeline)
+
+Pipeline de dados do **Banco Central (API SGS)** com Airflow 3, Postgres em camadas (raw → staging → marts) e **API REST em Django/DRF**. Foco no que torna um pipeline confiável em produção.
+
+- Carga histórica de 26 anos (Selic, CDI, IPCA, dólar) em cerca de 1 minuto, com carga incremental e backfill
+- Idempotência ponta a ponta: raw com sha256 e upsert que só reescreve revisões reais do BCB
+- Checagens de qualidade que bloqueiam os marts; valores validados contra o IPCA oficial de 2024
+- Dynamic task mapping: adicionar uma série é editar um YAML
+- 118 testes (unitários e de integração em Postgres real) rodando no CI
+- API somente leitura com OpenAPI/Swagger e decimais sem perda de precisão
+
+### ⚡ Tempo real — [cdc-sqlserver-postgres-kafka](https://github.com/BigLeno/cdc-sqlserver-postgres-kafka)
 
 Pipeline de **Change Data Capture (CDC)** em tempo real que replica alterações do SQL Server para PostgreSQL via Apache Kafka e Debezium.
 
@@ -36,15 +46,6 @@ Pipeline de **Change Data Capture (CDC)** em tempo real que replica alterações
 - Replicação com upsert e propagação de deletes para o PostgreSQL
 - Runbook operacional completo para diagnóstico e troubleshooting
 - Filtragem automática de tabelas via regex (somente tabelas com PK)
-
-### 📈 Dados & Mercado — [streamlitPipeline](https://github.com/BigLeno/streamlitPipeline)
-
-Dashboard financeiro interativo em Python para análise de carteiras de ativos do mercado brasileiro e internacional, com scraping automatizado, métricas de risco/retorno e gráficos interativos [3].
-
-- Stack: Python, Streamlit, Plotly, SQLAlchemy, SQLite [3]
-- Métricas: retorno acumulado, volatilidade, drawdown, médias móveis, RSI, MACD [3]
-- Heatmap de correlação entre ativos e heatmap de retornos mensais [3]
-- Thread em background para atualização periódica de preços [3]
 
 ### 🎓 Educação & Analytics — [data-analytics-portfolio](https://github.com/BigLeno/data-analytics-portfolio)
 
@@ -67,6 +68,10 @@ Pipeline de análise de dados educacionais (cursinho pré-vestibular) — do dad
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat&logo=apache-kafka&logoColor=white)
+
+### Backend
+![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
+![Django REST Framework](https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat&logo=django&logoColor=white)
 
 ### Ambientes
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
