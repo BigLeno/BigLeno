@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=190&section=header&text=Rutileno%20Gabriel&fontSize=44&fontColor=ffffff&fontAlignY=36&desc=Python%20Developer%20%7C%20Django%20%26%20Data&descSize=17&descAlignY=58" width="100%" alt="Rutileno Gabriel — Data Engineer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=190&section=header&text=Rutileno%20Gabriel&fontSize=44&fontColor=ffffff&fontAlignY=36&desc=Python%20Developer%20%7C%20Django%20%26%20Data&descSize=17&descAlignY=58" width="100%" alt="Rutileno Gabriel — Python Developer | Django & Data" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rutileno--gabriel-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rutileno-gabriel)
-![Data Engineer](https://img.shields.io/badge/Python_Developer-Confian%C3%A7a_FIDC-203a43?style=flat-square)
+![Python Developer | Django & Data](https://img.shields.io/badge/Python_Developer-Confian%C3%A7a_FIDC-203a43?style=flat-square)
 ![Natal, RN](https://img.shields.io/badge/Natal%2C_RN-Brasil-2c5364?style=flat-square)
 
 </div>
