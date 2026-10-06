@@ -19,6 +19,7 @@ Me formei em Ciências & Tecnologia pela UFRN. Antes de ir para dados, passei pe
 - Pipelines de ETL em camadas e CDC em tempo real entre SQL Server e PostgreSQL
 - DAGs de produção com Apache Airflow e Docker
 - Integração entre sistemas legados e novos em Python
+- APIs REST e aplicações web em Django, do desenvolvimento ao deploy
 - SQL analítico, dashboards e alguns modelos preditivos
 
 ## Projetos em destaque
@@ -40,7 +41,7 @@ Pipeline que busca Selic, CDI, IPCA e dólar na API SGS do Banco Central, organi
 
 ### ⚡ [cdc-sqlserver-postgres-kafka](https://github.com/BigLeno/cdc-sqlserver-postgres-kafka)
 
-Change Data Capture do SQL Server para o PostgreSQL: cada INSERT, UPDATE e DELETE na origem chega ao destino via Kafka e Debezium.
+Change Data Capture do SQL Server para o PostgreSQL: cada INSERT, UPDATE e DELETE na origem chega ao destino via Kafka e Debezium. É a versão de estudo de um fluxo que rodo em produção no trabalho.
 
 ![Apache Kafka](https://img.shields.io/badge/Kafka_4.3_(KRaft)-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
 ![Debezium](https://img.shields.io/badge/Debezium_3.5-6A9FB5?style=flat-square)
