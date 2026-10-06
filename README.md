@@ -110,7 +110,7 @@ Pipeline de análise de dados educacionais (cursinho pré-vestibular) — do dad
 
 <a href="https://github.com/BigLeno">
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=BigLeno&theme=noctis_minimus&show_icons=true" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BigLeno&theme=noctis_minimus&layout=compact" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BigLeno&theme=noctis_minimus&layout=compact&size_weight=0.1&count_weight=1.5" />
 </a>
 
 ---
