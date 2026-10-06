@@ -1,127 +1,124 @@
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%" />
-</p>
+<div align="center">
 
-# Olá! Eu sou o [BigLeno](https://github.com/BigLeno) 👋
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=190&section=header&text=Rutileno%20Gabriel&fontSize=44&fontColor=ffffff&fontAlignY=36&desc=Data%20Engineer%20%C2%B7%20Python%20%C2%B7%20Airflow%20%C2%B7%20SQL&descSize=17&descAlignY=58" width="100%" alt="Rutileno Gabriel — Data Engineer" />
 
-Sou **Python Developer / Data Engineer** na **[Confianca-FIDC](https://github.com/Confianca-FIDC)** — foco em pipelines de dados, ETL e integração de sistemas.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-rutileno--gabriel-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rutileno-gabriel)
+![Data Engineer](https://img.shields.io/badge/Data_Engineer-Confian%C3%A7a_FIDC-203a43?style=flat-square)
+![Natal, RN](https://img.shields.io/badge/Natal%2C_RN-Brasil-2c5364?style=flat-square)
 
-Tenho familiaridade com ambientes **Linux** para deploy, automação e administração de serviços em produção (Docker, bancos SQL, brokers de mensageria, web servers).
+</div>
 
-Antes disso, trabalhei com **hardware, IoT e prototipagem** na UFRN (URA, inPACTA, GPH), o que me deu uma visão completa do ciclo de desenvolvimento, do silício até o deploy em produção.
+<br />
 
-📍 Natal, RN — Brasil
+Sou engenheiro de dados na **Confiança FIDC**, onde trabalho com pipelines de ETL, CDC e integração entre sistemas, quase sempre em Python, SQL e Airflow.
 
----
+Me formei em Ciências & Tecnologia pela UFRN. Antes de ir para dados, passei pelos laboratórios da universidade (URA, inPACTA, GPH) trabalhando com hardware, IoT e prototipagem, e ainda carrego dessa época o gosto por Linux e por colocar as coisas para rodar em produção.
 
-## 🚀 O que eu faço agora
+## O que eu faço
 
-- **Data engineering** — pipelines ETL, CDC em tempo real, integração SQL Server ↔ PostgreSQL
-- **Orquestração** — Apache Airflow + Docker para DAGs de produção
-- **Automação** — Python para integração entre sistemas legados e modernos
-- **Análise & visualização de dados** — SQL analítico, dashboards e modelos preditivos
+- Pipelines de ETL em camadas e CDC em tempo real entre SQL Server e PostgreSQL
+- DAGs de produção com Apache Airflow e Docker
+- Integração entre sistemas legados e novos em Python
+- SQL analítico, dashboards e alguns modelos preditivos
 
----
+## Projetos em destaque
 
-## 🏷️ Featured Projects
+### 🏦 [bcb-indicadores-pipeline](https://github.com/BigLeno/bcb-indicadores-pipeline)
 
-### 🏦 Destaque — [bcb-indicadores-pipeline](https://github.com/BigLeno/bcb-indicadores-pipeline)
+Pipeline que busca Selic, CDI, IPCA e dólar na API SGS do Banco Central, organiza os dados em camadas no Postgres (raw → staging → marts) e expõe os indicadores numa API REST com Django.
 
-Pipeline de dados do **Banco Central (API SGS)** com Airflow 3, Postgres em camadas (raw → staging → marts) e **API REST em Django/DRF**. Foco no que torna um pipeline confiável em produção.
+![Airflow](https://img.shields.io/badge/Airflow_3-017CEE?style=flat-square&logo=apache-airflow&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Django REST](https://img.shields.io/badge/Django_REST-092E20?style=flat-square&logo=django&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
 
-- Carga histórica de 26 anos (Selic, CDI, IPCA, dólar) em cerca de 1 minuto, com carga incremental e backfill
-- Idempotência ponta a ponta: raw com sha256 e upsert que só reescreve revisões reais do BCB
-- Checagens de qualidade que bloqueiam os marts; valores validados contra o IPCA oficial de 2024
-- Dynamic task mapping: adicionar uma série é editar um YAML
-- 118 testes (unitários e de integração em Postgres real) rodando no CI
-- API somente leitura com OpenAPI/Swagger e decimais sem perda de precisão
+- Carga histórica de 26 anos em cerca de 1 minuto, depois incremental, com backfill
+- Rodar de novo não duplica dados; só revisões reais do BCB atualizam linhas
+- Checagens de qualidade antes dos marts, com os valores conferidos contra o IPCA oficial de 2024
+- 118 testes, parte deles em Postgres real, rodando no CI
 
-### ⚡ Tempo real — [cdc-sqlserver-postgres-kafka](https://github.com/BigLeno/cdc-sqlserver-postgres-kafka)
+### ⚡ [cdc-sqlserver-postgres-kafka](https://github.com/BigLeno/cdc-sqlserver-postgres-kafka)
 
-Pipeline de **Change Data Capture (CDC)** em tempo real que replica alterações do SQL Server para PostgreSQL via Apache Kafka e Debezium.
+Change Data Capture do SQL Server para o PostgreSQL: cada INSERT, UPDATE e DELETE na origem chega ao destino via Kafka e Debezium.
 
-- Captura de todas as alterações do banco de origem (INSERT, UPDATE, DELETE)
-- Apache Kafka 4.3.0 em modo KRaft (sem Zookeeper)
-- Debezium 3.5.2 com Source Connector e JDBC Sink Connector
-- Replicação com upsert e propagação de deletes para o PostgreSQL
-- Runbook operacional completo para diagnóstico e troubleshooting
-- Filtragem automática de tabelas via regex (somente tabelas com PK)
+![Apache Kafka](https://img.shields.io/badge/Kafka_4.3_(KRaft)-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
+![Debezium](https://img.shields.io/badge/Debezium_3.5-6A9FB5?style=flat-square)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 
-### 🎓 Educação & Analytics — [data-analytics-portfolio](https://github.com/BigLeno/data-analytics-portfolio)
+- Kafka 4.3 em modo KRaft (sem Zookeeper), Debezium com Source e JDBC Sink Connector
+- Upsert no destino e propagação de deletes
+- Tabelas selecionadas por regex, só as que têm PK
+- Runbook para diagnóstico e troubleshooting
 
-Pipeline de análise de dados educacionais (cursinho pré-vestibular) — do dado bruto "sujo" à base analítica estruturada, com dashboard, SQL, validação e modelo preditivo.
+### 🎓 [data-analytics-portfolio](https://github.com/BigLeno/data-analytics-portfolio)
 
-- Pipeline em camadas (ETL): extração fiel → tratamento documentado → base em Parquet
-- Camada analítica em **SQL (DuckDB)** e validação de schema com **Pandera**
-- **Dashboard interativo** (Streamlit + Plotly, 6 abas) e **score de propensão** (scikit-learn)
-- Ambiente reproduzível com **Docker** — roda o pipeline e sobe o painel sozinho
-- Rigor: auditoria e documentação da limitação amostral dos dados
+Análise dos dados de um cursinho pré-vestibular, partindo de planilhas brutas até uma base analítica, um dashboard e um modelo preditivo.
 
----
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+![Pandera](https://img.shields.io/badge/Pandera-150458?style=flat-square)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
-## 🧰 Stack
+- ETL em camadas com o tratamento documentado e base final em Parquet
+- Consultas em DuckDB e validação de schema com Pandera
+- Dashboard em Streamlit + Plotly e score de propensão com scikit-learn
+- Sobe inteiro com Docker; as limitações da amostra estão documentadas
 
-### Data Engineering (atual)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat&logo=apache-airflow&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat&logo=apache-kafka&logoColor=white)
+## Stack
 
-### Backend
-![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
-![Django REST Framework](https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat&logo=django&logoColor=white)
+**Engenharia de dados**<br />
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-### Ambientes
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
+**Backend e infraestrutura**<br />
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Django REST Framework](https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square&logo=django&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 
-### Desenvolvimento
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
+**Análise de dados**<br />
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
 
-### Data & Analytics
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+<details>
+<summary><b>Outras linguagens e hardware</b></summary>
+<br />
 
-### Hardware & IoT (histórico)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-C51A4A?style=flat&logo=raspberry-pi&logoColor=white)
-![3D Printing](https://img.shields.io/badge/3D_Printing-FF6F00?style=flat&logo=3m&logoColor=white)
-![Fusion360](https://img.shields.io/badge/Fusion_360-F58220?style=flat&logo=autodesk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white)
+![3D Printing](https://img.shields.io/badge/Impress%C3%A3o_3D-FF6F00?style=flat-square)
+![Fusion 360](https://img.shields.io/badge/Fusion_360-F58220?style=flat-square&logo=autodesk&logoColor=white)
 
----
+</details>
 
-## 🌎 Idiomas
+## GitHub
 
-- 🇧🇷 **Português** — Nativo
-- 🇺🇸 **Inglês** — Intermediário
-- 🇪🇸 **Espanhol** — Básico
+<div align="center">
 
----
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=BigLeno&theme=noctis_minimus&show_icons=true&hide_border=true&hide_rank=false" alt="Estatísticas do GitHub" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BigLeno&theme=noctis_minimus&layout=compact&size_weight=0.1&count_weight=1.5&hide_border=true" alt="Linguagens mais usadas" />
 
-## 📊 GitHub Stats
+</div>
 
-<a href="https://github.com/BigLeno">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=BigLeno&theme=noctis_minimus&show_icons=true" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BigLeno&theme=noctis_minimus&layout=compact&size_weight=0.1&count_weight=1.5" />
-</a>
+## Idiomas
 
----
+🇧🇷 Português (nativo) · 🇺🇸 Inglês (intermediário) · 🇪🇸 Espanhol (básico)
 
-## 🌐 Contato
+## Contato
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/rutileno-gabriel)
-- 🧠 [GitHub](https://github.com/BigLeno)
-- 📷 [Instagram](https://www.instagram.com/rutileno_gabriel/)
-- 💬 Discord: **BigLeno#5106**
+Me chama no [LinkedIn](https://www.linkedin.com/in/rutileno-gabriel).
 
-<p align="left">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=110&section=footer" width="100%" alt="" />
