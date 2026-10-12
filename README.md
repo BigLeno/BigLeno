@@ -12,7 +12,7 @@
 
 Sou desenvolvedor Python na **Confiança FIDC**, onde trabalho com aplicações e APIs em Django, pipelines de ETL, CDC e integração entre sistemas, quase sempre em Python, SQL e Airflow.
 
-Me formei em Ciências & Tecnologia pela UFRN. Antes de ir para dados, passei pelos laboratórios da universidade (URA, inPACTA, GPH) trabalhando com hardware, IoT e prototipagem, e ainda carrego dessa época o gosto por Linux e por colocar as coisas para rodar em produção.
+Me formei em Ciências & Tecnologia pela UFRN. Antes de ir para dados, passei pelos laboratórios da universidade (URA, inPACTA, GPH) trabalhando com hardware, IoT e prototipagem, e ainda carrego dessa época o gosto por Linux e por colocar as coisas para rodar em produção. Também gosto de aprender a stack que o problema pede: meu projeto mais recente é em Java com Spring Boot.
 
 ## O que eu faço
 
@@ -39,6 +39,21 @@ Pipeline que busca Selic, CDI, IPCA e dólar na API SGS do Banco Central, organi
 - Checagens de qualidade antes dos marts, com os valores conferidos contra o IPCA oficial de 2024
 - 118 testes, parte deles em Postgres real, rodando no CI
 
+### 🚚 [logitrack-spring](https://github.com/BigLeno/logitrack-spring)
+
+Sistema web de gestão de frota: agendamento de manutenções com regras de status e um dashboard de indicadores calculados direto no PostgreSQL.
+
+![Java](https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=thymeleaf&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+- Camadas controller → service → repository, com JPA no CRUD e SQL puro no dashboard
+- Migrations com Flyway: constraints, índices e regras de integridade sobre o schema original
+- Login com Spring Security e validações exibidas no próprio formulário
+- Testes de integração das consultas em Postgres real (Testcontainers) e tudo sobe com um `docker compose up`
+
 ### ⚡ [cdc-sqlserver-postgres-kafka](https://github.com/BigLeno/cdc-sqlserver-postgres-kafka)
 
 Change Data Capture do SQL Server para o PostgreSQL: cada INSERT, UPDATE e DELETE na origem chega ao destino via Kafka e Debezium. É a versão de estudo de um fluxo que rodo em produção no trabalho.
@@ -53,20 +68,6 @@ Change Data Capture do SQL Server para o PostgreSQL: cada INSERT, UPDATE e DELET
 - Tabelas selecionadas por regex, só as que têm PK
 - Runbook para diagnóstico e troubleshooting
 
-### 🎓 [data-analytics-portfolio](https://github.com/BigLeno/data-analytics-portfolio)
-
-Análise dos dados de um cursinho pré-vestibular, partindo de planilhas brutas até uma base analítica, um dashboard e um modelo preditivo.
-
-![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
-![Pandera](https://img.shields.io/badge/Pandera-150458?style=flat-square)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-
-- ETL em camadas com o tratamento documentado e base final em Parquet
-- Consultas em DuckDB e validação de schema com Pandera
-- Dashboard em Streamlit + Plotly e score de propensão com scikit-learn
-- Sobe inteiro com Docker; as limitações da amostra estão documentadas
-
 ## Stack
 
 **Engenharia de dados**<br />
@@ -80,6 +81,8 @@ Análise dos dados de um cursinho pré-vestibular, partindo de planilhas brutas 
 **Backend e infraestrutura**<br />
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![Django REST Framework](https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square&logo=django&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
