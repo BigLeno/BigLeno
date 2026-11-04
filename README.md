@@ -68,6 +68,21 @@ Change Data Capture do SQL Server para o PostgreSQL: cada INSERT, UPDATE e DELET
 - Tabelas selecionadas por regex, só as que têm PK
 - Runbook para diagnóstico e troubleshooting
 
+### 🛰️ [ollama-node-monitor](https://github.com/BigLeno/ollama-node-monitor)
+
+Monitor para servidores com Ollama: avisa no Telegram quando modelos são carregados ou descarregados e quando a API cai, e exporta métricas para o Prometheus. Nasceu num container LXC do Proxmox e virou uma ferramenta genérica para qualquer Linux.
+
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
+![systemd](https://img.shields.io/badge/systemd-30D475?style=flat-square&logo=linux&logoColor=black)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
+
+- Serviço systemd endurecido (`DynamicUser`, `ProtectSystem=strict`), com nota 3.4 "OK" no `systemd-analyze security`
+- Métricas no textfile collector do node_exporter e regras de alerta prontas
+- CI com shellcheck, testes no bash 4.4 a 5.2, instalação real com systemd num runner e smoke test do container
+- Token fora do código e do log, estado gravado de forma atômica
+
 ### 💹 [Dashboard Financeiro](https://github.com/BigLeno/streamlitPipeline) · [demo](https://dashboard-financeiro-bigleno.streamlit.app)
 
 Dashboard em Streamlit para acompanhar uma carteira de ações da B3 e dos EUA: candles, indicadores técnicos, correlação entre ativos e destaques da carteira, com dados do Yahoo Finance atualizados de forma incremental.
