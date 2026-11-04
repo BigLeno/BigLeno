@@ -68,6 +68,20 @@ Change Data Capture do SQL Server para o PostgreSQL: cada INSERT, UPDATE e DELET
 - Tabelas selecionadas por regex, só as que têm PK
 - Runbook para diagnóstico e troubleshooting
 
+### 🤖 [telegram-shift-bot](https://github.com/BigLeno/telegram-shift-bot)
+
+Bot do Telegram para equipes que trabalham em escala de plantão: lê a escala no Google Sheets, descobre quem está de plantão no horário pedido e encaminha o pedido de atendimento. Nasceu para uma equipe real da universidade e virou um bot genérico e configurável.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram_Bot-26A5E4?style=flat-square&logo=telegram&logoColor=white)
+![Google Sheets](https://img.shields.io/badge/Google_Sheets_API-34A853?style=flat-square&logo=googlesheets&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+
+- Turnos, períodos sem atendimento e textos configurados por variáveis de ambiente
+- Valida datas, expediente e antecedência mínima considerando o fuso horário
+- Regras de negócio isoladas do Telegram e do Google, testadas com um cliente falso
+- 62 testes e lint no CI em três versões do Python, com serviço systemd para produção
+
 ## Stack
 
 **Engenharia de dados**<br />
