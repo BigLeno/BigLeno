@@ -68,6 +68,21 @@ Change Data Capture do SQL Server para o PostgreSQL: cada INSERT, UPDATE e DELET
 - Tabelas selecionadas por regex, só as que têm PK
 - Runbook para diagnóstico e troubleshooting
 
+### 💹 [Dashboard Financeiro](https://github.com/BigLeno/streamlitPipeline) · [demo](https://dashboard-financeiro-bigleno.streamlit.app)
+
+Dashboard em Streamlit para acompanhar uma carteira de ações da B3 e dos EUA: candles, indicadores técnicos, correlação entre ativos e destaques da carteira, com dados do Yahoo Finance atualizados de forma incremental.
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+- Cotação e status da B3 e da bolsa americana atualizados a cada minuto, sem recarregar a página
+- Retorno, volatilidade, drawdown, médias móveis, RSI, MACD e correlação, cada um com uma leitura do momento
+- Imagem Docker com usuário sem privilégios e healthcheck, compose com PostgreSQL e publicação no GHCR
+- CI com testes em três versões do Python, testes contra PostgreSQL real e smoke test do container
+
 ### 🤖 [telegram-shift-bot](https://github.com/BigLeno/telegram-shift-bot)
 
 Bot do Telegram para equipes que trabalham em escala de plantão: lê a escala no Google Sheets, descobre quem está de plantão no horário pedido e encaminha o pedido de atendimento. Nasceu para uma equipe real da universidade e virou um bot genérico e configurável.
